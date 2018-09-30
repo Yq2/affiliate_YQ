@@ -1,0 +1,253 @@
+<!doctype "-//w3c//dtd html 4.01 transitional//en">
+<html>
+<head>
+    <base href="https://login.tradedoubler.com/pan/">
+    <title>TradeDoubler - Sale and lead breakdown report</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="copyright" content="Copyright &copy; 2017 Tradedoubler">        <!-- TBOX-667 -->
+
+<link rel="stylesheet" href="/pan/website/css/merchantReportStyle.css" type="text/css">
+    <link rel="stylesheet" href="/advertiser/styles/keepsessionalive.css?3091616" type="text/css">
+    <link type="text/css" rel="stylesheet" href="/pan/utils/css/report.css">
+    <link type="text/css" rel="stylesheet" href="/pan/website/css/style.css">
+    <link type="text/css" rel="stylesheet" href="/pan/website/css/menu_base.css">
+    <link type="text/css" rel="stylesheet" href="/pan/website/css/calendar.css">
+    <style type="text/css">
+		html, body {/*causes the new TD footer to appear at the bottom of page*/
+			min-height:100%;
+			height:100%;
+		}
+
+        #newProgramTable {
+            height: 100%;
+        }
+
+        .outerpopup {
+            background-color:#cccccc;
+            z-index: 400;
+            position:absolute;
+            top:0px;
+            left:0px;
+            opacity:.5;
+            width:100%;
+            height:1000px;
+            filter: progid: DXImageTransform . Microsoft . Alpha( opacity = 50 );
+        }
+
+        .innerpopup {
+            z-index: 500;
+            border: solid 4px #84b2c5;
+            background-color: #ffffff;
+            position: absolute;
+            left: 120px;
+            top: 70px;
+            width: 800px;
+            height: 600px;
+        }
+    </style>
+
+    <link type="text/css" rel="stylesheet" href="/pan/website/css/menu.css">
+            <link type="text/css" rel="stylesheet" href="/pan/websiteMerchant/css/merchant.css"><script language="JavaScript" src="/pan/website/js/global.js"></script>
+    <script language="JavaScript" src="/pan/website/js/cookies.js"></script>
+    <script language="JavaScript" src="/pan/website/js/menu.js"></script>
+    <script language="JavaScript" src="/pan/website/js/tabMenu.js"></script>
+    </head>
+ <body class="brandingBackground">
+    <!-- Google Tag Manager -->
+ <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBZRDP"
+                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+ <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+ })(window,document,'script','dataLayer','GTM-MBZRDP');</script>
+ <!-- End Google Tag Manager -->
+ <table class="header" width="760" cellpadding="0" cellspacing="0">
+	<tr>
+		<td style="width: 180px">
+			<a href="/pan/mStartPage.action?resetMenu=true"><img src="/pan/website/images/logo.png" alt="TradeDoubler" style="padding:10px"></a>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding: 10px">
+			<a href="/advertiser/jsp/general/logout.jsp">Logout</a>
+			|
+			<a href="/pan/mStartPage.action?resetMenu=true">Home</a>
+		</td>
+	</tr>
+</table>
+<br /><br />
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%">
+          <tr>
+            <td background="/pan/website/images/top_bg_merchant.gif"><img src="/pan/website/images/topbanner_merchant.gif"></td>
+          </tr>
+        </table>
+    <!--- ********************* MAIN ********************************************************** -->
+<div id="popBox" onMouseOver="clearTimeout(timeout);" onMouseOut="popBoxOut(event);"></div>
+<div id="popBoxShadow"></div>
+<table style="width:770px">
+<tr>
+  <td style="width:180px" valign="top">
+    <img src="/pan/img/inv.gif" height="1" width="170"><br><!-- Add your own PVN logotype here in the textkey PVN_PVN_LOGOTYPE_MERCHANT! --><!-- Menu -->
+    <!--merchantMenu.inc begin-->
+<form action="mStartPage.action" id="merchantMenuForm">
+    <span class="menu2">
+        <div class="menu2Common menu2Level1 menu2Header"><a href="/pan/mStartPage.action?resetMenu=true">Home</a></div>
+        <div class="menu2Common menu2Level2">
+                <select id="programChooserId" name="programId" onChange="getById('merchantMenuForm').submit()" class="input" style="width:152px">
+                    <option value="282508" selected class="select_inactive" > Twinkledeals BR [Closed 03/11/2017]&nbsp(BR)</option>
+                    <option value="282507" class="select_inactive" >Gamiss BR [closed 03/11/2017]&nbsp(BR)</option>
+                    <option value="285497" class="select_active" >Gamiss ES&nbsp(ES)</option>
+                    <option value="281461" class="select_active" >Gamiss PT&nbsp(PT)</option>
+                    <option value="281471" class="select_inactive" >NO USAR - Gamiss BR&nbsp(BR)</option>
+                    <option value="281462" class="select_inactive" >NO USAR - Rosegal BR&nbsp(BR)</option>
+                    <option value="281453" class="select_inactive" >NO USAR - Twinkledeals BR&nbsp(PT)</option>
+                    <option value="281464" class="select_inactive" >NO USAR - Zaful BR&nbsp(BR)</option>
+                    <option value="282509" class="select_inactive" >Rosegal BR [Closed 03/11/2017]&nbsp(BR)</option>
+                    <option value="285486" class="select_active" >Rosegal ES&nbsp(ES)</option>
+                    <option value="281463" class="select_active" >Rosegal PT&nbsp(PT)</option>
+                    <option value="285498" class="select_active" >Rosewholesale ES&nbsp(ES)</option>
+                    <option value="281454" class="select_active" >Twinkledeals PT&nbsp(PT)</option>
+                    <option value="282510" class="select_active" >Zaful BR [Closed 03/11/2017]&nbsp(BR)</option>
+                    <option value="285485" class="select_active" >Zaful ES&nbsp(ES)</option>
+                    <option value="281465" class="select_active" >Zaful PT&nbsp(PT)</option>
+                    </select>
+            </div>
+        <script language="JavaScript">
+            
+                newFolder('Ad Management');
+                
+                    newNode('Ads', '/pan/mGEGraphicalElementListAction.action?programId=282508&reset=true');
+                
+                        newNode('AdTool', '/pan/mPFContentUnitList.action?programId=282508');
+                    
+                        newNode('Ad Groups', '/pan/mAdGroupListAction.action?programId=282508');
+                    
+                        newNode('Vouchers', '/pan/mListVouchers.action?programId=282508');
+                    
+
+                closeFolder();
+            
+
+            newFolder('Settings');
+
+            
+                    newNode('Management', '/pan/mWebsiteStatusRead.action?programId=282508');
+                
+                    newNode('Financial', '/pan/mProgramTariffList.action?programId=282508');
+                
+                newNode('Verification', '/pan/mTrackingCheckImplementationRead.action');
+            
+                newNode('User settings', '/pan/mPasswordRead.action');
+            
+                newNode('Transaction Inquiries', '/pan/mClaimsList.action?programId=282508');
+             
+                newNode('Conversions API', '/pan/mManageConversions.action?programId=282508');
+            
+
+            closeFolder();
+
+            newFolder('Reports');
+
+            
+                newNode('My reports', '/pan/mReport3DisplayFavorites.action?tabSet=mReport3MyReports');
+            
+                    newNode('Overview', '/pan/mReport3Selection.action?reportName=mMerchantOverviewReport');
+                
+                newNode('Ad report', '/pan/mReport3Selection.action?reportName=mMerchantGraphicalElementReport');
+            
+                newNode('Daily events', '/pan/mReport3Selection.action?reportName=mMerchantDailyEventsReport');
+            
+                    newNode('Custom event', '/pan/mReport3Selection.action?reportName=mMerchantCustomEventReport');
+                
+
+            closeFolder();
+
+            newFolder('Other Reports');
+
+            
+                        newNode('Prepayment account balance', '/pan/mReport3Selection.action?reportName=mMerchantPrepaymentAccountBalanceReport');
+                    
+                newNode('Recruitment', '/pan/mReport3Selection.action?reportName=mMerchantRecruitmentReport');
+                
+                newNode('Sale and lead breakdown report', '/pan/mReport3Selection.action?reportName=mMerchantSaleAndLeadBreakdownReport');
+            
+                newNode('Mobile Overview Report', '/pan/mReport3Selection.action?reportName=mMerchantMobileOverviewReport');
+            
+                    newNode('Transactions per month report', '/pan/mReport3Selection.action?reportName=mMerchantTransactionsPerMonthReport');
+                
+                    newNode('Old invoice specification', '/pan/mReport3Selection.action?reportName=mMerchantDetailedInvoiceReport');
+                
+                    newNode('Invoice Specification', '/pan/mInvoiceSpecificationRedirect.action?programId=282508');
+                
+                        newNode('Segment report', '/pan/mReport3Selection.action?reportName=mMerchantSegmentReport');
+                    
+                    newNode('Category report', '/pan/reportSelection/mProgramAffiliateCategory');
+                
+                    newNode('Feed Category Breakdown&nbsp;', '/pan/mReport3Selection.action?reportName=mMerchantFeedCategoryBreakdownReport');
+                
+                    newNode('Top products', '/pan/mReport3Selection.action?reportName=mMerchantTopProductsReport');
+                
+                    newNode('Adserving&nbsp;', '/pan/mReport3Selection.action?reportName=mMerchantAdservingReport');
+                
+                    newNode('Batch report', '/pan/reportSelection/mBatchFiles');
+                
+                        newNode('File hosting', '/pan/reportSelection/mFilehosting');
+                    
+                        newNode('Content unit overview', '/pan/reportSelection/mContentUnitOverview');
+                    
+
+            closeFolder();
+
+            
+                newFolder('Information');
+                newNode('Manuals', '/pan/mInfoCenter.action?textKey=INFORMATION_MERCHANT_MANUALS_USER_MANUAL');
+                
+                    newNode('Info center', '/pan/mInfoCenter.action?textKey=INFORMATION_MERCHANT_INFOCENTER_CUSTOMER_CENTER');
+                
+                closeFolder();
+            
+                initMenu();
+            </script>
+    </span>
+</form>
+<!--merchantMenu.inc begin-->
+</td>
+  <td style="width:590px" valign="top" class="contentWindow">
+    <img src="/pan/img/inv.gif" height="1" width="590"><br>
+
+<table style="width:100%;  margin-top: 2px; padding: 0px 2px 2px 2px;">
+    <tr><td style="padding: 5px" valign="top">
+<div id="prepaymentZeroWarning" style="visibility:hidden; position:absolute;">
+     <span>
+         <p style="width:240px;">
+         The prepayment balance on this program has run out, as a result the program is temporarily paused and no stats will update until the prepayment balance has been topped up by the advertiser. You may continue to promote the program and will be awarded commission for any transactions that you put through during this period, however the stats will not appear in your reports while the program is paused.</p>
+     </span>     
+ </div>
+
+ 
+<p>The generated report data size is 5 MB and is too big to be shown as normal. If you want you can download the result from <a href="/report/published/mMerchantSaleAndLeadBreakdownReport_915591812_1212708420249306799.xls.zip"  target="_blank">here.</a></p>
+    <div align="left">
+                    <a href="mReport3Selection.action?reportName=mMerchantSaleAndLeadBreakdownReport&startDate=5/1/17&endDate=11/30/17&programId=281465&isPostBack=&metric1.lastOperator=/&interval=MONTHS&segmentId=&favoriteDescription=&currencyId=USD&run_as_organization_id=&eventId=5&minRelativeIntervalStartTime=0&metric1.summaryType=NONE&includeMobile=1&metric1.operator1=/&latestDayToExecute=0&showAdvanced=true&metric1.midFactor=&reportTitleTextKey=REPORT3_SERVICE_REPORTS_MMERCHANTSALESANDLEADBREAKDOWNREPORT_TITLE&setColumns=true&metric1.columnName1=organizationId&metric1.columnName2=organizationId&reportPrograms=&metric1.midOperator=/&viewType=1&favoriteName=&affiliateId=&dateType=1&period=custom_period&geId=&tabMenuName=&maxIntervalSize=12&allPrograms=false&favoriteId=&metric1.name=&filterOnTimeHrsInterval=false&customKeyMetricCount=0&metric1.factor=&showFavorite=false&separator=&setColumns=true"><img src="/pan/website/images/back.gif"></a>
+    </div></td></tr>
+    </table>
+<!--- ********************* /MAIN PAGE ********************************************************** -->
+  </td>
+</tr>
+</table>
+
+
+
+<!--- ********************* /MAIN ********************************************************** -->
+<!--- ********************* TAIL ********************************************************** -->
+<table style="border-width: 1px 0 0 0;">
+	<tr>
+		<td style="width:500px" align="right">
+			Copyright &copy; 2017 Tradedoubler</td>
+	</tr>
+</table>
+<!--- ********************* /TAIL ********************************************************** -->
+
+</body>
+ </html>

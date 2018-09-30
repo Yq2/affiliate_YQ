@@ -1,0 +1,16 @@
+{
+  "name": "affiliate_YQ",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "cheerio": "^1.0.0-rc.2",
+    "debug": "~2.6.3",
+    "node-xlsx": "^0.7.4",
+    "request": "^2.81.0",
+    "unzip": "^0.1.11"
+  }
+}

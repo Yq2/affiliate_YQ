@@ -1,0 +1,525 @@
+<!doctype "-//w3c//dtd html 4.01 transitional//en">
+<html>
+<head>
+    <base href="https://login.tradedoubler.com/pan/">
+    <title>TradeDoubler - Welcome</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="copyright" content="Copyright &copy; 2017 Tradedoubler">        <!-- TBOX-667 -->
+
+    <link rel="stylesheet" href="/pan/website/css/merchantReportStyle.css" type="text/css">
+    <link rel="stylesheet" href="/advertiser/styles/keepsessionalive.css?6472369" type="text/css">
+    <link type="text/css" rel="stylesheet" href="/pan/utils/css/report.css">
+    <link type="text/css" rel="stylesheet" href="/pan/website/css/style.css">
+    <link type="text/css" rel="stylesheet" href="/pan/website/css/menu_base.css">
+    <link type="text/css" rel="stylesheet" href="/pan/website/css/calendar.css">
+    <style type="text/css">
+        html, body {/*causes the new TD footer to appear at the bottom of page*/
+            min-height:100%;
+            height:100%;
+        }
+
+        #newProgramTable {
+            height: 100%;
+        }
+
+        .outerpopup {
+            background-color:#cccccc;
+            z-index: 400;
+            position:absolute;
+            top:0px;
+            left:0px;
+            opacity:.5;
+            width:100%;
+            height:1000px;
+            filter: progid: DXImageTransform . Microsoft . Alpha( opacity = 50 );
+        }
+
+        .innerpopup {
+            z-index: 500;
+            border: solid 4px #84b2c5;
+            background-color: #ffffff;
+            position: absolute;
+            left: 120px;
+            top: 70px;
+            width: 800px;
+            height: 600px;
+        }
+    </style>
+
+    <link type="text/css" rel="stylesheet" href="/pan/website/css/menu.css">
+    <link type="text/css" rel="stylesheet" href="/pan/websiteMerchant/css/merchant.css"><script language="JavaScript" src="/pan/website/js/global.js"></script>
+    <script language="JavaScript" src="/pan/website/js/cookies.js"></script>
+    <script language="JavaScript" src="/pan/website/js/menu.js"></script>
+    <script language="JavaScript" src="/pan/website/js/tabMenu.js"></script>
+    <script type='text/javascript' src='/static-resources/3rd/jquery/jquery-1.7.1.js'></script>
+    <script type="text/javascript">
+
+
+        function getheight(){
+            var d= document.documentElement;
+            var b= document.body;
+            var who= d.offsetHeight? d: b ;
+            return Math.max(who.scrollHeight,who.offsetHeight);
+        }
+
+        function getwidth(){
+            var d= document.documentElement;
+            var b= document.body;
+            var who= d.offsetWidth? d: b ;
+            return Math.max(who.scrollWidth,who.offsetWidth);
+        }
+
+        function TogglePopupPanel()
+        {
+            var panelContainer = document.getElementById("LowPrePaymentDiv");
+            var frame = document.getElementById("frame1");
+
+
+
+            if (panelContainer.style.display == "none")
+            {
+                panelContainer.style.display = "";
+
+                document.getElementById('LowPrepaymentFrame').focus();
+                document.body.onfocus = function() { document.getElementById('LowPrepaymentFrame').focus(); };
+                document.getElementById('LowPrepaymentFrame').height = getheight() + 200;
+                document.getElementById('LowPrepaymentFrame').width = getwidth() + 200;
+            }
+            else
+            {
+                panelContainer.style.display = "none";
+                document.body.onfocus = function() { return true; };
+            }
+        }
+
+
+
+
+
+    </script>
+    <script src="/pan/website/js/justgage/raphael.2.1.0.min.js"></script>
+    <script src="/pan/website/js/justgage/justgage.1.0.1.min.js"></script>
+
+    <style type="text/css">
+
+        .LowPrePaymentContentArea {
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            background-color: #FFFFFF;
+            z-index: 100;
+            margin-top: -100px;
+            width: 400px;
+            margin-left: -200px;
+
+        }
+
+        .LowPrepaymentFrame {
+
+            left: 0;
+            top: 0;
+
+            position: absolute;
+            background-color:  	#C0C0C0;
+            filter: progid :   DXImageTransform .   Microsoft .
+            Alpha(opacity =   75);
+            z-index: 99;
+            border: 0;
+            -moz-opacity: 0.75;
+
+        }
+
+        .LowPrePaymentContentArea .TitleBar {
+            margin: 0;
+            display: block;
+            background-color: #76B2DF;
+            line-height: 20px;
+            color: white;
+            font-weight: bold;
+            padding: 0 0 0 5px;
+        }
+
+        .LowPrePaymentContentArea .ContentArea {
+            padding: 0 0 0 5px;
+
+        }
+
+    </style></head>
+<body class="brandingBackground">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MBZRDP"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MBZRDP');</script>
+<!-- End Google Tag Manager -->
+<table class="header" width="760" cellpadding="0" cellspacing="0">
+    <tr>
+        <td style="width: 180px">
+            <a href="/pan/mStartPage.action?resetMenu=true"><img src="/pan/website/images/logo.png" alt="TradeDoubler" style="padding:10px"></a>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 10px">
+            <a href="/advertiser/jsp/general/logout.jsp">Logout</a>
+            |
+            <a href="/pan/mStartPage.action?resetMenu=true">Home</a>
+        </td>
+    </tr>
+</table>
+<br /><br />
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%">
+    <tr>
+        <td background="/pan/website/images/top_bg_merchant.gif"><img src="/pan/website/images/topbanner_merchant.gif"></td>
+    </tr>
+</table>
+<!--- ********************* MAIN ********************************************************** -->
+<div id="popBox" onMouseOver="clearTimeout(timeout);" onMouseOut="popBoxOut(event);"></div>
+<div id="popBoxShadow"></div>
+<table style="width:770px">
+    <tr>
+        <td style="width:180px" valign="top">
+            <img src="/pan/img/inv.gif" height="1" width="170"><br><!-- Add your own PVN logotype here in the textkey PVN_PVN_LOGOTYPE_MERCHANT! --><!-- Menu -->
+            <!--merchantMenu.inc begin-->
+            <form action="mStartPage.action" id="merchantMenuForm">
+    <span class="menu2">
+        <div class="menu2Common menu2Level1 menu2Header"><a href="/pan/mStartPage.action?resetMenu=true">Home</a></div>
+        <div class="menu2Common menu2Level2">
+                <select id="programChooserId" name="programId" onChange="getById('merchantMenuForm').submit()" class="input" style="width:152px">
+                    <option value="272507" selected class="select_inactive" >Dezzal IT [closing 18/08/2017]&nbsp(IT)</option>
+                    <option value="272508" class="select_inactive" >Dresslily IT [closing 12/08/2017]&nbsp(IT)</option>
+                    <option value="273610" class="select_active" >Dresslily UK&nbsp(GB)</option>
+                    <option value="272509" class="select_active" >Nastydress IT&nbsp(IT)</option>
+                    <option value="272512" class="select_active" >Rosegal FR&nbsp(FR)</option>
+                    <option value="272125" class="select_active" >Rosegal IT&nbsp(IT)</option>
+                    <option value="272513" class="select_inactive" >Sammydress ES [CLOSED 20/09/2017]&nbsp(ES)</option>
+                    <option value="277176" class="select_active" >Sammydress FR&nbsp(FR)</option>
+                    <option value="265461" class="select_inactive" >Sammydress Italy [closing 26.06.2017]&nbsp(IT)</option>
+                    <option value="278006" class="select_active" >Yoshop IT&nbsp(IT)</option>
+                    <option value="277987" class="select_active" >Yoshop UK&nbsp(GB)</option>
+                    <option value="278684" class="select_active" >Zaful DE&nbsp(DE)</option>
+                    <option value="277177" class="select_active" >Zaful FR&nbsp(FR)</option>
+                    <option value="272510" class="select_active" >Zaful IT&nbsp(IT)</option>
+                    </select>
+            </div>
+        <script language="JavaScript">
+
+                newFolder('Ad Management');
+
+                newNode('Ads', '/pan/mGEGraphicalElementListAction.action?programId=272507&reset=true');
+
+                newNode('AdTool', '/pan/mPFContentUnitList.action?programId=272507');
+
+                newNode('Ad Groups', '/pan/mAdGroupListAction.action?programId=272507');
+
+                newNode('Vouchers', '/pan/mListVouchers.action?programId=272507');
+
+
+                closeFolder();
+
+
+                newFolder('Settings');
+
+
+                newNode('Management', '/pan/mWebsiteStatusRead.action?programId=272507');
+
+                newNode('Financial', '/pan/mProgramTariffList.action?programId=272507');
+
+                newNode('Verification', '/pan/mTrackingCheckImplementationRead.action');
+
+                newNode('User settings', '/pan/mPasswordRead.action');
+
+                newNode('Transaction Inquiries', '/pan/mClaimsList.action?programId=272507');
+
+                newNode('Conversions API', '/pan/mManageConversions.action?programId=272507');
+
+
+                closeFolder();
+
+                newFolder('Reports');
+
+
+                newNode('My reports', '/pan/mReport3DisplayFavorites.action?tabSet=mReport3MyReports');
+
+                newNode('Overview', '/pan/mReport3Selection.action?reportName=mMerchantOverviewReport');
+
+                newNode('Ad report', '/pan/mReport3Selection.action?reportName=mMerchantGraphicalElementReport');
+
+                newNode('Daily events', '/pan/mReport3Selection.action?reportName=mMerchantDailyEventsReport');
+
+                newNode('Custom event', '/pan/mReport3Selection.action?reportName=mMerchantCustomEventReport');
+
+
+                closeFolder();
+
+                newFolder('Other Reports');
+
+
+                newNode('Recruitment', '/pan/mReport3Selection.action?reportName=mMerchantRecruitmentReport');
+
+                newNode('Sale and lead breakdown report', '/pan/mReport3Selection.action?reportName=mMerchantSaleAndLeadBreakdownReport');
+
+                newNode('Mobile Overview Report', '/pan/mReport3Selection.action?reportName=mMerchantMobileOverviewReport');
+
+                newNode('Transactions per month report', '/pan/mReport3Selection.action?reportName=mMerchantTransactionsPerMonthReport');
+
+                newNode('Old invoice specification', '/pan/mReport3Selection.action?reportName=mMerchantDetailedInvoiceReport');
+
+                newNode('Invoice Specification', '/pan/mInvoiceSpecificationRedirect.action?programId=272507');
+
+                newNode('Segment report', '/pan/mReport3Selection.action?reportName=mMerchantSegmentReport');
+
+                newNode('Category report', '/pan/reportSelection/mProgramAffiliateCategory');
+
+                newNode('Feed Category Breakdown&nbsp;', '/pan/mReport3Selection.action?reportName=mMerchantFeedCategoryBreakdownReport');
+
+                newNode('Top products', '/pan/mReport3Selection.action?reportName=mMerchantTopProductsReport');
+
+                newNode('Adserving&nbsp;', '/pan/mReport3Selection.action?reportName=mMerchantAdservingReport');
+
+                newNode('Batch report', '/pan/reportSelection/mBatchFiles');
+
+                newNode('Content unit overview', '/pan/reportSelection/mContentUnitOverview');
+
+
+                closeFolder();
+
+
+                newFolder('Information');
+                newNode('Manuals', '/pan/mInfoCenter.action?textKey=INFORMATION_MERCHANT_MANUALS_USER_MANUAL');
+
+                newNode('Info center', '/pan/mInfoCenter.action?textKey=INFORMATION_MERCHANT_INFOCENTER_CUSTOMER_CENTER');
+
+                closeFolder();
+
+                resetMenuCookies();
+                // Set the Advertiser management as the start page
+                menuSwitch(1, 'sub3');
+            </script>
+    </span>
+            </form>
+            <!--merchantMenu.inc begin-->
+        </td>
+        <td style="width:590px" valign="top" class="contentWindow">
+            <img src="/pan/img/inv.gif" height="1" width="590"><br>
+
+            <table style="width:100%;  margin-top: 2px; padding: 0px 2px 2px 2px;">
+                <tr><td style="padding: 5px" valign="top">
+                    <table>
+                        <tr>
+                            <td class="rightSpace">
+
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h1>Welcome to Tradedoubler</h1>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+
+                                            <table class="tableBox" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <th>Applications</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <table>
+                                                            <tr>
+                                                                <td width=130>Approved</td>
+                                                                <td width=56 align="right">0</td>
+                                                                <td width="160">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Denied</td>
+                                                                <td align="right">246</td>
+                                                                <td>
+                                                                    <img src="/pan/images/red_dot.gif" width="50" height=8/>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Under consideration</td>
+                                                                <td align="right">0</td>
+                                                                <td>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>On hold</td>
+                                                                <td align="right">0</td>
+                                                                <td>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Ended</td>
+                                                                <td align="right">536</td>
+                                                                <td>
+                                                                    <img src="/pan/images/red_dot.gif" width="109" height=8/>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Total</td>
+                                                                <td align="right"><b>782</b></td>
+                                                                <td>&nbsp;</td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <br/>
+                                            <p><div style="background: #ececec; margin-bottom: 4px; width: 375px; border: #76b2df 1px solid">
+                                                <div style="background:#76b2df; padding:3px 0 4px 8px;">
+                                                    <span style="font-size: 15px; color: #fff; font-weight:bolder;">Information</span>
+                                                </div>
+                                                <div style="padding: 8px">
+
+                                                    <h1>Our white label global partner management platform: TD CONNECT</h1><br>
+                                            <p>TD CONNECT is our white-label global partner management solution.  It allows you to track and manage all your digital marketing activity, whether that’s digital channels such as search, display, email or individual traffic sources or affiliate partners.</p>
+                                            <p>TD CONNECT can be used as an in-house tracking and channel de-duplication platform or as an affiliate management solution.  You can use it to assign commissions to your partners and to attribute spend based on performance.</p>
+                                            <p>It is powered by the same technology as our affiliate network, so you are assured of the same functionality and high performance to manage your digital marketing and deliver smarter results.</p>
+                                            <h2>Features</h2><UL style="color:#555555;">
+                                            <LI> Globally distributed tracking that is accurate and reliable across different devices and even when cookies are not present</LI>
+                                            <LI> Our reporting suite allows cross-channel deduplication to ensure that sales are correctly attributed</LI>
+                                            <LI> Conversions API can push information to your partners in real time</LI>
+                                            <LI> TD ADAPT is our powerful business intelligence platform that gives you complete visibility on the performance of all your digital activity</LI>
+                                            <LI> We are able to handle all your payment activity, paying your partners across the globe in the currency of their choice</LI>
+                                            <LI> You can incorporate your brand look and feel into our white label interfaces</LI>
+                                            <LI> Tradedoubler’s intelligent ad serving technology is tailored to the demands of digital marketing.  You can serve and manage display ads, product feeds, vouchers and other affiliate formats through a single interface</LI>
+                                        </UL>
+                                            <!--
+                                            <h2>Benefits</h2><UL style="color:#555555;">
+                                            <LI> Cost saving: you manage your key partners in-house, saving costs and time</LI>
+                                            <LI> Full visibility of the online journeys of your customers, based on your KPIs, through TD ADAPT. You can drill down into your performance data and see the results you need to see</LI>
+                                            <LI> Cross channel reporting means you understand the role that all your digital channels play in delivering a return on investment</LI>
+                                            <LI> Branding: you can brand TD CONNECT in line with your look and feel and using your KPIs</LI>
+                                            <LI> Automated payments: facilitate smooth management of payments to all your partners: payments can be made in the currency of their choice and exchange rate risks are minimised</LI>
+                                            <LI> TD CONNECT is a flexible, customisable partner management platform. It will ensure that your digital marketing is optimised, accountable and delivers smarter results for your business</LI>
+                                            -->
+                                            </UL>
+
+                                            </div>
+                                            </div>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table>
+                                    <tr>
+                                        <th>Tradedoubler news</th>
+                                    </tr>
+                                    <tr>
+                                        <td><!--[if gte mso 9]><xml>  <o:OfficeDocumentSettings>   <o:AllowPNG/>  </o:OfficeDocumentSettings> </xml><![endif]--><!--[if gte mso 9]><xml>  <o:OfficeDocumentSettings>   <o:AllowPNG/>  </o:OfficeDocumentSettings> </xml><![endif]--><!--[if gte mso 9]><xml>  <w:WordDocument>   <w:View>Normal</w:View>   <w:Zoom>0</w:Zoom>   <w:TrackMoves/>   <w:TrackFormatting/>   <w:PunctuationKerning/>   <w:ValidateAgainstSchemas/>   <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>   <w:IgnoreMixedContent>false</w:IgnoreMixedContent>   <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>   <w:DoNotPromoteQF/>   <w:LidThemeOther>EN-ZA</w:LidThemeOther>   <w:LidThemeAsian>X-NONE</w:LidThemeAsian>   <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>   <w:Compatibility>    <w:BreakWrappedTables/>    <w:SnapToGridInCell/>    <w:WrapTextWithPunct/>    <w:UseAsianBreakRules/>    <w:DontGrowAutofit/>    <w:SplitPgBreakAndParaMark/>    <w:EnableOpenTypeKerning/>    <w:DontFlipMirrorIndents/>    <w:OverrideTableStyleHps/>   </w:Compatibility>   <m:mathPr>    <m:mathFont m:val="Cambria Math"/>    <m:brkBin m:val="before"/>    <m:brkBinSub m:val="&#45;-"/>    <m:smallFrac m:val="off"/>    <m:dispDef/>    <m:lMargin m:val="0"/>    <m:rMargin m:val="0"/>    <m:defJc m:val="centerGroup"/>    <m:wrapIndent m:val="1440"/>    <m:intLim m:val="subSup"/>    <m:naryLim m:val="undOvr"/>   </m:mathPr></w:WordDocument> </xml><![endif]--><!--[if gte mso 9]><xml>  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"   DefSemiHidden="true" DefQFormat="false" DefPriority="99"   LatentStyleCount="267">   <w:LsdException Locked="false" Priority="0" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Normal"/>   <w:LsdException Locked="false" Priority="9" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>   <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>   <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>   <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>   <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>   <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>   <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>   <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>   <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>   <w:LsdException Locked="false" Priority="39" Name="toc 1"/>   <w:LsdException Locked="false" Priority="39" Name="toc 2"/>   <w:LsdException Locked="false" Priority="39" Name="toc 3"/>   <w:LsdException Locked="false" Priority="39" Name="toc 4"/>   <w:LsdException Locked="false" Priority="39" Name="toc 5"/>   <w:LsdException Locked="false" Priority="39" Name="toc 6"/>   <w:LsdException Locked="false" Priority="39" Name="toc 7"/>   <w:LsdException Locked="false" Priority="39" Name="toc 8"/>   <w:LsdException Locked="false" Priority="39" Name="toc 9"/>   <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>   <w:LsdException Locked="false" Priority="10" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Title"/>   <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>   <w:LsdException Locked="false" Priority="11" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>   <w:LsdException Locked="false" Priority="22" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Strong"/>   <w:LsdException Locked="false" Priority="20" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>   <w:LsdException Locked="false" Priority="59" SemiHidden="false"    UnhideWhenUsed="false" Name="Table Grid"/>   <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>   <w:LsdException Locked="false" Priority="1" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>   <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading"/>   <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List"/>   <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid"/>   <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1"/>   <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2"/>   <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1"/>   <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2"/>   <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1"/>   <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2"/>   <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3"/>   <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List"/>   <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading"/>   <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List"/>   <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid"/>   <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 1"/>   <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 1"/>   <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 1"/>   <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>   <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>   <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>   <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>   <w:LsdException Locked="false" Priority="34" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>   <w:LsdException Locked="false" Priority="29" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Quote"/>   <w:LsdException Locked="false" Priority="30" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>   <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>   <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>   <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>   <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>   <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 1"/>   <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>   <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 1"/>   <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>   <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 2"/>   <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 2"/>   <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 2"/>   <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>   <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>   <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>   <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>   <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>   <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>   <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>   <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 2"/>   <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>   <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 2"/>   <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>   <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 3"/>   <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 3"/>   <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 3"/>   <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>   <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>   <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>   <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>   <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>   <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>   <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>   <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 3"/>   <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>   <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 3"/>   <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>   <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 4"/>   <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 4"/>   <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 4"/>   <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>   <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>   <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>   <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>   <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>   <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>   <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>   <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 4"/>   <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>   <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 4"/>   <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>   <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 5"/>   <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 5"/>   <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 5"/>   <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>   <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>   <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>   <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>   <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>   <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>   <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>   <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 5"/>   <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>   <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 5"/>   <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>   <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 6"/>   <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 6"/>   <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 6"/>   <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>   <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>   <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>   <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>   <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>   <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>   <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>   <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 6"/>   <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>   <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 6"/>   <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>   <w:LsdException Locked="false" Priority="19" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>   <w:LsdException Locked="false" Priority="21" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>   <w:LsdException Locked="false" Priority="31" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>   <w:LsdException Locked="false" Priority="32" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>   <w:LsdException Locked="false" Priority="33" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>   <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>   <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>  </w:LatentStyles> </xml><![endif]--><!--[if gte mso 10]> <style>  /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-priority:99; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman","serif";} </style> <![endif]--><p style="margin: 0cm 0cm 10pt"><span style="font-size: small; font-family: Calibri"><br /><a href="http://www.admarula.com/newsletter/interview-claire-hauser/" target="_blank"></a> </span></p> <p>&nbsp;</p><p>&nbsp;</p></td>
+                                    </tr>
+                                </table>
+
+                            </td>
+
+                            <td class="rightColumn">
+                                <h3 class="boxHeaderGrey">Your Account manager</h3>
+                                <b>Marta&nbsp;Tipa</b><br/>
+                                <b>E:</b>&nbsp;<a href="mailto:marta.tipa@tradedoubler.com">marta.tipa@tradedoubler.com</a><br/>
+                                <b>T:</b>&nbsp;0<br/>
+                                <br/>
+                                <b>TradeDoubler Srl</b><br/>
+                                Corso Garibaldi nr.86<br/>
+                                20121&nbsp;Milano<br/>
+                                Telephone:&nbsp;+39 02 919838<br />
+                                <h3 class="boxHeaderGrey">Program settings</h3>
+                                Settings for the program currently administered:<br/><br/>
+                                <table>
+                                    <tr>
+                                        <td><b>Program name:</b></td>
+                                        <td>Dezzal IT [closing 18/08/2017]</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Program ID:</b></td>
+                                        <td>272507</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Active status:</b></td>
+                                        <td>
+                                            Inactive</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Public status:</b></td>
+                                        <td>
+                                            Private</td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div id="LowPrePaymentDiv" style="display: none">
+                        <iframe class="LowPrepaymentFrame" frameborder="0" scrolling="no" id="LowPrepaymentFrame"></iframe>
+
+                        <div class="LowPrePaymentContentArea">
+
+                            <table class="tableBox" style="height: 100%">
+                                <tr>
+                                    <th style="tableBox" >Warning – Low prepayment balance</th>
+                                    <th align="right">
+                                        <div align="right"><a href="javascript:CustomWindow('/pan/displayPageHelp.action?textKey=MERCHANT_STARTPAGE_PROGRAM_LOW_PREPAYMENT_WARNING_POPUP_HELP_TEXT&textKeyTitle=MERCHANT_STARTPAGE_PROGRAM_LOW_PREPAYMENT_WARNING_POPUP_HELP_TITLE', 400, 400)"><img src="/pan/images/help.gif" border="0"></a></div></th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="tableBox">The prepayment account balance for these programs indicated below is running low or empty.  If the balance is not topped up these programs will be paused</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table  style="tableBox">
+                                            <tr>
+                                                <th>Program ID</th>
+                                                <th>Program name</th>
+                                                <th>Prepayment status</th>
+                                                <th><NOBR>Balance</NOBR></th>
+                                            </tr>
+                                            <tr style="color: white" bgcolor="#FF0033"> <td>272510</td>
+                                                <td>Zaful IT</td>
+                                                <td>Balance is 0</td>
+                                                <td align="right">0&nbsp;
+                                                    EUR</td>
+
+                                            </tr>
+
+
+
+                                        </table>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td align="right"><input type="Button" value="Close" onclick="TogglePopupPanel()"></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                    <script type="text/javascript"> TogglePopupPanel();</script></td></tr>
+            </table>
+            <!--- ********************* /MAIN PAGE ********************************************************** -->
+        </td>
+    </tr>
+</table>
+
+
+
+<!--- ********************* /MAIN ********************************************************** -->
+<!--- ********************* TAIL ********************************************************** -->
+<table style="border-width: 1px 0 0 0;">
+    <tr>
+        <td style="width:500px" align="right">
+            Copyright &copy; 2017 Tradedoubler</td>
+    </tr>
+</table>
+<!--- ********************* /TAIL ********************************************************** -->
+
+</body>
+</html>
